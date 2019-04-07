@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>formeventdemo</title>
+<script type="text/javascript">
+function showdata()            //do not give the function name form otherwise the code will not run.
+{
+var f=document.frm;            //Accessing the form object using name property.
+var user=f.txtuser.value;       //Accessing input element data using name property.
+var pwd=f.txtpwd.value;
+alert("userid -"+user+" , userpassword -"+pwd);
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<table>
+<tr><td>loginid: </td><td><input type="text" name="txtuser" id="userid"></td></tr>
+<tr><td>password:</td><td><input type="password" name="txtpwd" id="userpwd"></td></tr>
+<tr><td><input type="button" value="login" onclick="showdata()"></td></tr>
+</table>
+</form>
+</body>
+</html>

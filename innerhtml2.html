@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>innerhtmldemo</title>
+<script type="text/javascript">
+function show()
+{
+var x= document.getElementById("nav");
+var y= x.getElementsByTagName("li");
+for(var i=0;i<y.length;i++)                                       //if you want only 1st ul elements
+alert(y[i].innerHTML);
+var z= document.getElementById("nav2");
+var t=z.getElementsByTagName("li");
+for(var i=0;i<t.length;i++)
+alert(t[i].innerHTML);
+} 
+/*function show()
+{
+var x=document.getElementsByTagName("li");
+for(var i=0;i<x.length;i++)                                          //if you want all the elements.
+alert(x[i].innerHTML);
+}*/
+</script>
+</head>
+<body>
+<ul id="nav">
+<li>home</li>
+<li>services</li>
+<li>tablets</li>
+</ul>
+<ul id="nav2">
+<li>mobiles</li>
+<li>wallets</li>
+<li>clothes</li>
+</ul>
+</body>
+<body>
+<input type="button" value="clickme" onclick="show();">
+</body>
+</html>

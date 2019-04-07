@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+function show()
+{
+var clr=["red","green","blue"];
+var j=0;
+var x=document.getElementsByTagName("a");
+for(var i=0;i<x.length;i++)
+{
+x[i].style.color=clr[j];
+j++;
+if(j==3)
+j=0;
+}
+}
+</script>
+</head>
+<body>
+<p><a  href="javascript:show() ">click first </a></p>
+<p><a  href="javascript:show() ">click second </a></p>
+<p><a  href="javascript:show() ">click third </a></p>
+<p><a  href="javascript:show() ">click fourth </a></p>
+</body>
+</html>

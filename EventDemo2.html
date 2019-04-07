@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>EventDemo2</title>
+<script type="text/javascript">
+function chg(x,y)
+{
+x.style.backgroundColor=y;
+}
+</script>
+<style type= "text/css">
+#div1
+{
+width:300px;
+height:200px;
+border:solid 2px black;
+}
+#div2
+{
+width:300px;
+height:200px;
+border:solid 1px black;
+}
+</style>
+</head>
+<body>
+<div id="div1" onmouseover="chg(this,'red')"> 
+Hover mouse to change color to red.
+</div>
+<div id="div2" onmouseover="chg(this,'green')">
+Hover mouse to change color to green.
+</div>
+</body>
+</html>

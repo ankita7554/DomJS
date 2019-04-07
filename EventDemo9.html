@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+function show()
+{
+var x=document.frm.firstno.value;
+var y=document.frm.secondno.value;
+var z=parseInt(x)+parseInt(y);
+alert("the sum of the numbers is:"+z);
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<table>
+<tr><td>Enter 1stno:<input type="text" name="firstno" </td></tr>
+<tr><td>Enter 2ndno:<input type="text" name= "secondno" </td></tr>
+<input type="button" value="clickme" onclick="show();">
+</table>
+</form>
+</body>
+</html>

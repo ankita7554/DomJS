@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>mouseeventdemo</title>
+<img id="mypic" src="joeopen.jpg">
+<script type="text/javascript">
+var x=document.getElementById("mypic");
+x.onmouseover=function()          //this is a handler function.
+{
+this.setAttribute("src", "joeblink.jpg");
+}
+x.onmouseout=function()          // this is also a handler function.
+{
+this.setAttribute("src","joeopen.jpg");
+}
+</script>
+</head>
+</html>

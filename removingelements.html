@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+function removepara()
+{
+var mydiv=document.getElementById("d1");
+var mypara=document.getElementById("p1");
+mydiv.removeChild(mypara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p1"> this is 1st para</p>
+<p>this is 2nd para</p>
+<p>this is 3rd para</p>
+</div>
+<input type="button" value="click me" onclick="removepara();">
+</body>
+</html>

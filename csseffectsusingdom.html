@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>innerhtmldemo</title>
+<script type="text/javascript">
+function change()
+{
+var x=document.getElementById("p1");
+alert(x.innerHTML);
+x.innerHTML=" <b>Now the text has changed</b>";
+x.style.color="red";
+x.style.fontSize="24px";
+}
+</script>
+</head>
+<body>
+<p id="p1"><i> This is a simple paragraph.</i></p>
+<input type="button" value="click me" onclick="change()">
+</body>
+</html>

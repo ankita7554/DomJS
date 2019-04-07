@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<style type="text/css">
+body
+{
+background-color:#A9A9A9;
+}
+#d2
+{
+position:relative;
+margin-top:300px;
+margin-left:400px;
+font-weight:bold;
+font-size:30px;
+}
+</style>
+<script type="text/javascript">
+function addlist(value)
+{ 
+	var lang = []
+	switch(value){
+		case 'server' : 
+		 lang=["javascript","vb script","html"];
+        break;
+        case 'client':
+        lang= ['ankita','sharema'];
+        break;
+        default :
+        lang = ['default']
+	} 
+	var mylist=document.createElement("ul");
+	for(var i=0;i<lang.length;i++)
+	{
+	mylist.innerHTML+="<li>"+lang[i]+"</li>";
+     }
+    document.getElementById("d1").appendChild(mylist);
+}/*
+function addlist1()
+{
+ console.log("addlist1")
+var lang=["javascript","vb script","html"];
+var mylist=document.createElement("ul");
+for(var i=0;i<lang.length;i++)
+{
+mylist.innerHTML+="<li>"+lang[i]+"</li>";
+}
+document.getElementById("d1").appendChild(mylist);
+}
+function addlist2()
+{
+var lang=["c","c++","java"];
+var mylist=document.createElement("ul");
+for(var i=0;i<lang.length;i++)
+{
+mylist.innerHTML+="<li>"+lang[i]+"</li>";
+}
+document.getElementById("d1").appendChild(mylist);
+}
+function addlist3()
+{
+var lang=["master of the game","nothing lasts forever","tell me your dreams"];
+var mylist=document.createElement("ul");
+for(var i=0;i<lang.length;i++)
+{
+mylist.innerHTML+="<li>"+lang[i]+"</li>";
+}
+document.getElementById("d1").appendChild(mylist);
+}
+function addlist4()
+{
+var lang=["Apti by RVPraveen","logical reasoning","non verbal reasoning"];
+var mylist=document.createElement("ul");
+for(var i=0;i<lang.length;i++)
+{
+mylist.innerHTML+="<li>"+lang[i]+"</li>";
+}
+document.getElementById("d1").appendChild(mylist);
+}
+function addme(input){
+   console.log("INPUT" + input)
+}*/
+</script>
+</head>
+<body>
+<div id="d2">
+SELECT A CATEGORY 
+<select mutiple" onchange="addlist(this.value)">
+  <option value="server"  id="sl">Server</option>
+  <option value="client"  id="cl">Client</option>
+  <option value="ankita"  id="tb">Technical books</option>
+  <option value="novbk" id="nb">Novels</option>
+  <option value="Aptitude & Reasoning" id="ar">Aptitude & Reasoning</option>
+</select>
+</div>
+<div id="d1">  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+function addpara()
+{
+var pr=document.createElement("pr");
+var txt=document.createTextNode("this is 3rd paragraph");
+pr.appendChild(txt);
+var mydiv=document.getElementById("d1");
+mydiv.appendChild(pr);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p>this is 1st paragraph </p>
+<p>this is 2nd paragraph</p>
+</div>
+<input type="button" value="addnewpara" onclick="addpara()">
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+var arr=[2, ,8,12];
+document.write("length is "+arr.length+"<br><br>");
+document.write("Before sorting:<br>");
+for (var i in arr)   //for-in loop skips undefined.
+document.write(arr[i]+"<br>");
+arr.sort();
+document.write("After sorting:<br>");
+for (var i in arr)
+document.write(arr[i]+"<br>");
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>onfocuseventdemo</title>
+<script type="text/javascript">
+function process(elem)
+{
+alert(elem.value);  //if only elem then output would be objecthtmlinputelement.
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<table>
+<tr><td>loginid:<td><input type="text" name="txtuser" id="userid"  onfocus="process(this)" ></td></tr>
+<tr><td>password:<td><input type="password" name="txtpwd" id="userpwd" onfocus="process(this)"></td></tr>
+</table>
+</form>
+</body>
+</html>

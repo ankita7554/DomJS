@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<style type="text/css">
+body
+{
+background-color:#A9A9A9;
+}
+div
+{
+position:relative;
+margin-top:300px;
+margin-left:400px;
+font-weight:bold;
+font-size:30px;
+}
+</style>
+<script type="text/javascript">
+function addlist()
+{
+var lang=["php","jsp","Asp.net"];
+var mylist=document.createElement("ul");
+for(var i=0;i<lang.length;i++)
+{
+mylist.innerHTML+="<li>"+lang[i]+"</li>";
+}
+document.getElementById("d1").appendChild(mylist);
+}
+</script>
+</head>
+<body>
+<input type="button" value="click me" onclick="addlist()">
+<div id="d1"></div>
+</body>
+</html>
+

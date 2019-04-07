@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>javascriptdemo</title>
+<script type="text/javascript">
+function addpara()
+{
+var newpara=document.createElement("p");
+var txt=document.createTextNode("this is new paragraph.");
+newpara.appendChild(txt);
+var mydiv=document.getElementById("d1");
+var secpara=document.getElementById("p1");
+mydiv.insertBefore(newpara,secpara);
+}
+</script>
+</head>
+<body>
+<div id="d1">
+<p id="p">this is first para.</p>
+<p id="p1">this is second para.</p>
+</div>
+<input type="button" value="click me" onclick="addpara()">
+</body>
+</html>

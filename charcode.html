@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>EventDemo</title>
+</head>
+<body>
+<b>Type Phone Number </b> <input type= "text" id="mytext" maxlength="10"><span id="sp1"></span>
+<script type= "text/javascript">
+var x= document.getElementById("mytext");
+x.onkeypress=function(e)
+{
+if(e.charCode>=48 && e.charCode<=57)              //no should be from 0 to 9.
+{
+var s=document.getElementById("sp1");
+s.innerHTML=" ";                  //if everything is o.k. then clear the text of span we are saying to browser.
+return true;
+}
+else
+{
+var s=document.getElementById("sp1");
+s.innerHTML="only digits are allowed:";
+s.style.color="red";
+return false;                         // no characters will be displayed by writing any character.
+}
+}
+</script>
+</body>
+</html>
